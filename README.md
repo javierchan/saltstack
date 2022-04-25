@@ -1,2 +1,2 @@
 # saltstack
-Saltstack Sandbox
+Saltstack Sandbox Formulas and Infrastructure Deployment Recipes
