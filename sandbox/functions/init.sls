@@ -1,0 +1,2 @@
+include:
+  - functions.dir.example
