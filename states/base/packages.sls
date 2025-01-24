@@ -1,1 +1,5 @@
-# Additional base system packages
+additional-packages:
+  pkg.installed:
+    - pkgs:
+      - htop
+      - git
