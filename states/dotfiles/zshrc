@@ -1,0 +1,26 @@
+# Set the default shell to zsh
+export SHELL=/bin/zsh
+
+# Enable command auto-correction
+setopt CORRECT
+
+# Enable command history
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+
+# Set prompt
+PROMPT='%n@%m %1~ %# '
+
+# Alias definitions
+alias ll='ls -la'
+alias gs='git status'
+alias gp='git pull'
+alias gd='git diff'
+
+# Source custom scripts
+if [ -f ~/.zsh_custom ]; then
+  source ~/.zsh_custom
+fi
+
+# ...existing code...

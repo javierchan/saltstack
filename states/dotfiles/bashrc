@@ -1,0 +1,3 @@
+# Example .bashrc content
+export PATH=$PATH:/usr/local/bin
+alias ll='ls -la'

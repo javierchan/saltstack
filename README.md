@@ -12,10 +12,17 @@ saltstack-formulas/
 │   ├── vault/
 │   │   ├── secrets.sls
 │   │   └── other_secrets.sls
+│   ├── dotfiles.sls
 ├── states/
 │   ├── nginx/
 │   ├── apache/
 │   ├── users/
+│   ├── dotfiles/
+│   │   └── init.sls
+│   │   ├── bashrc
+│   │   ├── vimrc
+│   │   ├── gitconfig
+│   │   └── zshrc
 ├── custom-modules/
 ├── utils/
 │   ├── scripts/
@@ -36,6 +43,8 @@ saltstack-formulas/
 
 3. Add your secrets to `pillar/vault/secrets.sls`.
 
+4. Define your dot files in `pillar/dotfiles.sls`.
+
 ## Usage Examples
 
 To apply the states, run:
@@ -46,6 +55,11 @@ salt '*' state.apply
 To apply a specific state, run:
 ```sh
 salt '*' state.apply nginx
+```
+
+To apply the dotfiles state, run:
+```sh
+salt '*' state.apply dotfiles
 ```
 
 ## Security

@@ -1,0 +1,3 @@
+" Example .vimrc content
+set number
+syntax on
